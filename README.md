@@ -46,8 +46,13 @@ Q8 Расскажите нам о себе и предоставьте неск�
 Ссылка на моё портфолио с примерами работ https://kiros-albatros.github.io/porfolio/
 Отдельные работы 
 https://kiros-albatros.github.io/singolo/
+
 https://kiros-albatros.github.io/cat-hotel/
+
 https://kiros-albatros.github.io/english-for-kids/ 
+
 https://kiros-albatros.github.io/cat-energy/
+
 Ссылка на тестовое задание https://kiros-albatros.github.io/nyamushka/dist/index.html
+
 Репозиторий тестового задания https://github.com/kiros-albatros/nyamushka
