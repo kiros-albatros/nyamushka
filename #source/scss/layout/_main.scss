@@ -3,6 +3,7 @@ html {
 }
 
 body {
+    position: relative;
     background-color: #3a3636;
     background:
         url(../../img/bg@2x.png) center repeat,
@@ -23,7 +24,23 @@ h3 {
 }
 
 main {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     padding: 20px 10px;
+
+    @media (max-width: 1200px) {
+        margin-top: 30%;
+        position: relative;
+        left: 0%;
+        top: 0%;
+        transform: none;
+    }
+
+    @media (max-width: 1000px) {
+        margin-top: 0;
+    }
 
     @media (max-width: 360px) {
         padding: 20px 5px;
