@@ -193,3 +193,19 @@
     border-radius: 12px;
     opacity: 0.6;
 }
+
+.item {
+    .description-subtitle {
+        display: none;
+    }
+}
+
+.selected {
+    .buy-subtitle {
+        display: none;
+    }
+
+    .description-subtitle {
+        display: block;
+    }
+}
