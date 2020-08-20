@@ -1,0 +1,31 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: #3a3636;
+    background:
+        url(../../img/bg@2x.png) center repeat,
+        url(../../img/Shadow.png) center repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    font-family: "Trebuchet MS";
+}
+
+h3 {
+    font-size: 3.6rem;
+    line-height: 4.2rem;
+    color: #FFFFFF;
+    opacity: 0.7;
+    font-weight: normal;
+    font-family: "Exo-Thin";
+    text-align: center;
+}
+
+main {
+    padding: 20px 10px;
+
+    @media (max-width: 360px) {
+        padding: 20px 5px;
+    }
+}

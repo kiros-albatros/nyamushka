@@ -7,6 +7,8 @@
 @import "abstract/_mixins.scss";
 
 //Layout
+@import "layout/_main.scss";
+@import "layout/_cards.scss";
 
 //Components
 @import "components/_buttons.scss";

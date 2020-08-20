@@ -1,0 +1,184 @@
+.cards__wrapper {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 1100px) {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+.item {
+    margin-right: 20px;
+
+    @media (max-width: 1110px) {
+        margin-bottom: 30px;
+    }
+
+    @media (max-width: 500px) {
+        margin-right: 0;
+    }
+}
+
+.card {
+    background-color: #F2F2F2;
+    border-radius: 12px;
+    min-width: 320px;
+    min-height: 480px;
+    overflow: hidden;
+    padding-left: 48px;
+    padding-top: 16px;
+
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    clip-path: polygon(14.7% 0, 100% 0, 100% 100%, 0 100%, 0 9.7%);
+
+    @media (max-width: 400px) {
+        min-width: 310px;
+    }
+
+    @media (max-width: 360px) {
+        min-width: 300px;
+    }
+}
+
+.card-border {
+    position: relative;
+    width: 328px;
+    height: 488px;
+    background-color: #2ea8e6;
+    border-radius: 14px;
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
+
+    @media (max-width: 400px) {
+        width: 318px;
+    }
+
+    @media (max-width: 360px) {
+        width: 308px;
+    }
+}
+
+.selected {
+    .card-border {
+        background-color: $color-pink;
+    }
+}
+
+.disabled {
+    .card-border {
+        background-color: $color-grey;
+    }
+}
+
+.card__image-cantainer {
+    position: absolute;
+    top: 45%;
+    left: -7%;
+}
+
+.card__promo,
+.present__text {
+    color: $text-add-color;
+}
+
+.card__promo {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+}
+
+.card__title {
+    font-weight: bold;
+    font-size: 4.8rem;
+    line-height: 5.6rem;
+    margin: 0;
+    padding-top: 5px;
+}
+
+.card__taste {
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+}
+
+.card__present {
+    padding-top: 15px;
+}
+
+.present__text {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+}
+
+.present__number {
+    font-weight: bold;
+}
+
+.card__subtitle {
+    padding-top: 14px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+}
+
+.disabled {
+    .card__subtitle {
+        color: #FFFF66;
+    }
+}
+
+.card__subtitle {
+    a {
+        color: $color-blue;
+        text-decoration: underline;
+        text-decoration-style: dashed;
+
+    }
+}
+
+.card__weight {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: $color-blue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.selected {
+    .card__weight {
+        background-color: $color-pink;
+    }
+}
+
+.disabled {
+    .card__weight {
+        background-color: $color-grey;
+    }
+}
+
+.weight__number,
+.weight__kg {
+    color: #FFFFFF;
+}
+
+.weight__number {
+    padding-top: 15px;
+    font-size: 4.2rem;
+    line-height: 2.2rem;
+    padding-bottom: 7px;
+}
+
+.weight__kg {
+    font-size: 2.1rem;
+    line-height: 2.2rem;
+}
