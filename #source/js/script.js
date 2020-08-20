@@ -2,7 +2,8 @@ let cards = document.querySelectorAll(".item:not(disabled)");
 let promo = document.querySelectorAll(".card__promo");
 
 for (let i = 0; i < cards.length; i++) {
-    cards[i].addEventListener("click", function () {
+    cards[i].addEventListener("click", function (event) {
+        event.preventDefault();
         if (cards[i].classList.contains("selected")) {
             cards[i].classList.remove("selected");
             promo[i].innerHTML = "Сказочное заморское яство";
